@@ -33,6 +33,7 @@ const GlobalStyles = createGlobalStyle`
   --color-blue-400: #0DBBFC;
   --color-blue-600: #1C3D5B;
   --color-blue-700: #0369a1;
+  --color-blue-800: #1C3D5B;
   --color-blue-900: #0A2640;
   --color-blue-9001b: rgba(10, 38, 64, 0.109375);
   --color-blue-9001c: rgba(10, 38, 64, 0);

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Logo from "./Logo"
 import Button from "../ui/Button"
 import heroGraphics from "/HeroGraphics.svg"
+import HalfCircle from "../ui/CircleShape";
 import { companyLogos } from "../data";
 
 
@@ -14,17 +15,6 @@ const Container = styled.header`
   display: flex;
   flex-direction: column;
   padding: 4rem 8rem;
-`;
-
-const HalfCircle = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 110rem;
-  height: 110rem;
-  background-color: var(--color-grey-25);
-  z-index: 1;
-  clip-path: circle(50% at 100% 0);
 `;
 
 const Navbar = styled.nav`

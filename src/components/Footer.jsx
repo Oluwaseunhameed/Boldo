@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import Button from "../ui/Button";
+import HalfCircle from "../ui/CircleShape";
 
 // Styled components
 const Section = styled.section`
@@ -22,6 +23,8 @@ const FooterWrapper = styled.div`
 const MinWidth = styled.div`
   width: 70%;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 `;
 
 const Title = styled.h1`
@@ -89,7 +92,7 @@ const FooterNote = styled.p`
 
 const FooterLink = styled.a`
   background-color: var(--color-green-500);
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 50%;
   color: var(--color-blue-900);
   margin-left: 0.5rem;
@@ -99,6 +102,12 @@ const Footer = () => {
   return (
     <Section>
       <FooterWrapper>
+        <HalfCircle
+          halfCircle="circle(25% at 100% 0)"
+          bgColor="var(--color-blue-800)"
+          height="40rem"
+          width="120rem"
+        />
         <MinWidth>
           <Title>An enterprise template to ramp up your company website</Title>
           <Form>
